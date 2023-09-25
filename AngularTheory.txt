@@ -1,0 +1,60 @@
+Introduction to Angular  :::
+----------------------------------
+<br>
+1) Angular is a UI framework for building Single Page Application(SPA).
+
+    SPA ==> Single Page Application
+
+2) Angular is built using Typescript.
+3)Angular provides all core functionality needed for client app . It comes bundled with a router module , an HTTP module ,a forms API etc.
+
+4) Angular also provide built in testing support.
+
+5) Angular is an opinionated framework.
+
+
+Client Server Architecture :::
+------------------------------------
+    User
+-----------
+    |                  request
+  client   ------------------------------------> server
+  Browsers                                     (process)
+  Chrome, Firefox       response                   |
+               <----------------------------------json
+  Postman , Thunder Client
+  Android App , IOS App
+  React App ,  Angular App
+
+
+Component :::
+-------------------------------
+1) Angular Application is composed of components.
+2) Building blocks of angular ui app.
+
+
+                 AppComponent(root component)
+                         |
+        ------------------------------------------
+                       Navbar           (component)
+        -------|----------------------------------       
+        Sidenav|          Info Component
+               |----------------------------------
+    (component)|          Service Component
+               |----------------------------------
+               |         Contact Component  (component)
+               |----------------------------------
+               |          About Component
+               |----------------------------------
+               |          Footer Component
+       --------|----------------------------------
+             
+
+
+  component ---> component (nested component)
+
+component ----> 1) Html Template 
+                2) Data & Logic (Typescript file)
+                3) Style(Css file)
+                4) testing
+                
