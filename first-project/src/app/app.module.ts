@@ -9,6 +9,7 @@ import { NavbarComponent } from './components/navbar-component/navbar-component.
 import { ServicesComponent } from './components/services/services.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -16,7 +17,7 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     FooterComponent,
     NavbarComponent,
     ServicesComponent,
-    SidebarComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
