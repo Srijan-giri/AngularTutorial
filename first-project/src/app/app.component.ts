@@ -14,3 +14,5 @@ export class AppComponent {
   title = 'we are learning about component';
   // data & logic 
 }
+
+
