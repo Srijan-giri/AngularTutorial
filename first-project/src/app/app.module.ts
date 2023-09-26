@@ -8,6 +8,8 @@ import { FooterComponent } from './components/FooterComponent/footer.component';
 import { NavbarComponent } from './components/navbar-component/navbar-component.component';
 import { ServicesComponent } from './components/services/services.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { TeamComponent } from './components/team/team.component';
+import { CustomModule } from './modules/custom.module';
 
 
 @NgModule({
@@ -17,11 +19,12 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     FooterComponent,
     NavbarComponent,
     ServicesComponent,
-    SidebarComponent
+    SidebarComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CustomModule, // component --> declaration cutom.module.ts--->export it ---> imports it in app.module.ts ---> then we can use selector of team in app.component.html
   ],
   providers: [],
   bootstrap: [AppComponent]
