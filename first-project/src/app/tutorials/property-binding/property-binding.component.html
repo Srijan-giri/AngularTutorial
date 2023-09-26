@@ -1,0 +1,13 @@
+<div>
+    <h2>Property Binding Example</h2>
+    <button [disabled]="active">Pay</button>
+    <br>
+    <input type="text" value="Property Binding" [disabled]="active">
+    <br>
+    <div [innerHTML]="title"></div>
+    <!-- <div [innerText]="title"> -->
+
+    <div [ngStyle]="ob" [innerHTML]="title"></div>
+    <img [src]="imagePath" alt="">
+    <p>{{title}}</p>
+</div>
