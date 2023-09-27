@@ -10,4 +10,10 @@
     <div [ngStyle]="ob" [innerHTML]="title"></div>
     <img [src]="imagePath" alt="">
     <p>{{title}}</p>
+
+    <div [hidden]="show">
+        <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, deserunt?</P>
+        <p>Happy Birthday</p>
+    </div>
+    <button (click)="getShowDetails()">Show</button>
 </div>

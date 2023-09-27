@@ -17,6 +17,14 @@ export class PropertyBindingComponent {
 
   imagePath ="https://picsum.photos/200/300"
 
+  // practise
+
+  show = false;
+
+  getShowDetails(){
+    this.show = !this.show;
+  }
+
 }
 
 /*

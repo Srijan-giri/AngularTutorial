@@ -1,0 +1,15 @@
+<div>
+    <h2>Event Binding Example</h2>
+    <button (click)="buttonClick()" [ngStyle]="styleOb" [disabled]="active">
+        Click Me
+    </button>
+    <!-- <button (click)="buttonClick()" (mouseenter)="mouseEntered()">Click Me</button> -->
+    <h1>{{counter}}</h1>
+    <button (click)="increaseCount($event)">increase</button>
+
+    <hr>
+    <input #inputField type="text" (keyup.enter)="printInputValue1($event,inputField)">
+    <!-- <input #inputField type="text" (keyup)="printInputValue($event,inputField)"> -->
+
+
+</div>
