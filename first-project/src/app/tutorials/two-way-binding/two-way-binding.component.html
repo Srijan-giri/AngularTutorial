@@ -1,0 +1,14 @@
+<div>
+    <h2>Two Way Binding Example</h2>
+    <!-- <input type="text" 
+    [value] = "title"
+    (input)="changeValue($event)"
+    > -->
+
+    <input type="text" 
+    [(ngModel)]="title"
+    >
+
+    <button>Clear Field</button>
+    {{title}}
+</div>

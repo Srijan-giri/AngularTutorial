@@ -59,4 +59,6 @@ component ----> 1) Html Template
                 4) testing
                 
 
-                
+two way databinding : 
+
+ view <--------> data

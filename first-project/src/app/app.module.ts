@@ -13,6 +13,8 @@ import { CustomModule } from './modules/custom.module';
 import { InterpolationComponent } from './tutorials/interpolation/interpolation.component';
 import { PropertyBindingComponent } from './tutorials/property-binding/property-binding.component';
 import { EventBindingComponent } from './tutorials/event-binding/event-binding.component';
+import { TwoWayBindingComponent } from './tutorials/two-way-binding/two-way-binding.component';
+import { FormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -26,12 +28,13 @@ import { EventBindingComponent } from './tutorials/event-binding/event-binding.c
     InterpolationComponent,
     PropertyBindingComponent,
     EventBindingComponent,
+    TwoWayBindingComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CustomModule, // component --> declaration cutom.module.ts--->export it ---> imports it in app.module.ts ---> then we can use selector of team in app.component.html
-
+   FormsModule, // [ngModel]
   ],
   providers: [],
   bootstrap: [AppComponent]
