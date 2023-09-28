@@ -1,0 +1,11 @@
+<div class="container">
+    <p>Parent Component</p>
+    <h1>Parent Counter {{parentCounter}} </h1>
+    <app-child-compo 
+    [counter]=45 
+    [firstName]="'Ankit Tiwari'"
+    (customEventEmitter)="parentMethod($event)"
+    >
+    </app-child-compo>
+
+</div>

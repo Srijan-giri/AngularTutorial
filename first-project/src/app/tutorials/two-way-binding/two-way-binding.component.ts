@@ -7,11 +7,15 @@ import { Component } from '@angular/core';
 })
 export class TwoWayBindingComponent {
   title = 'sachin ramesh tendulkar';
-  
+
   // changeValue(event: Event) {
   //   const inputField = event.target as HTMLInputElement;
   //   this.title = inputField.value;
   // }
+
+  getClearField(event: Event) {
+    this.title = '';
+  }
 
 }
 

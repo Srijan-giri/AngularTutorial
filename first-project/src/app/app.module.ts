@@ -15,6 +15,11 @@ import { PropertyBindingComponent } from './tutorials/property-binding/property-
 import { EventBindingComponent } from './tutorials/event-binding/event-binding.component';
 import { TwoWayBindingComponent } from './tutorials/two-way-binding/two-way-binding.component';
 import { FormsModule } from '@angular/forms';
+import { ParentCompoComponent } from './tutorials/parent-compo/parent-compo.component';
+import { ChildCompoComponent } from './tutorials/child-compo/child-compo.component';
+
+import { ProfilesComponent } from './examples/profiles/profiles.component';
+import { FriendListComponent } from './examples/friend-list/friend-list.component';
 
 
 @NgModule({
@@ -29,12 +34,17 @@ import { FormsModule } from '@angular/forms';
     PropertyBindingComponent,
     EventBindingComponent,
     TwoWayBindingComponent,
+    ParentCompoComponent,
+    ChildCompoComponent,
+    ProfilesComponent,
+    FriendListComponent,
+
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     CustomModule, // component --> declaration cutom.module.ts--->export it ---> imports it in app.module.ts ---> then we can use selector of team in app.component.html
-   FormsModule, // [ngModel]
+    FormsModule, // [ngModel]
   ],
   providers: [],
   bootstrap: [AppComponent]
