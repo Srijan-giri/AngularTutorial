@@ -1,0 +1,33 @@
+.list {
+    border: 1px solid #e2e2e2;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+table,
+td,
+th {
+    border: 1px solid;
+    padding: 10px 25px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+/* .first {
+    background-color: bisque;
+}
+
+.last {
+    background-color: aquamarine;
+} */
+
+.even{
+    background-color: rgb(221, 221, 19);
+}
+
+.odd{
+    background-color: rgb(62, 62, 241);
+    color:white;
+}
