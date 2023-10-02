@@ -1,0 +1,14 @@
+<div>
+    <h2>Ng Style Tutorial</h2>
+    <!-- <div [ngStyle]="{
+        color:'red',
+        backgroundColor:'black',
+        padding:'10px',
+        borderRadius:'10%'
+    }"> -->
+    <div [ngStyle]="styleObject">
+        Learning Angular
+    </div>
+    <button (click)="changeStyle()">Change Style</button>
+    <button (click)="toggleChange()" [ngStyle]="{marginLeft:'5px',}">Toogle Change </button>
+</div>

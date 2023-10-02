@@ -8,6 +8,11 @@ import { NgSwitchComponent } from './components/ng-switch/ng-switch.component';
 import { FormsModule } from '@angular/forms';
 import { NgIfComponent } from './components/ng-if/ng-if.component';
 import { NgClassComponent } from './components/ng-class/ng-class.component';
+import { NgStyleComponent } from './components/ng-style/ng-style.component';
+import { csClassDirective } from './CustomDirectives/cs-class.directive';
+import { dkClassDirective } from './CustomDirectives/dk-class.directive';
+import { csIfDirective } from './CustomDirectives/cs-if.directive';
+
 
 @NgModule({
   declarations: [
@@ -15,7 +20,11 @@ import { NgClassComponent } from './components/ng-class/ng-class.component';
     NgForComponent,
     NgSwitchComponent,
     NgIfComponent,
-    NgClassComponent
+    NgClassComponent,
+    NgStyleComponent,
+    csClassDirective,
+    dkClassDirective,
+    csIfDirective
   ],
   imports: [
     BrowserModule,

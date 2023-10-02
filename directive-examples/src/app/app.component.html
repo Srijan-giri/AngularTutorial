@@ -1,8 +1,15 @@
-<div class = "container">
-    <h1>App is running !!!</h1>
+<div class="container">
+    <!-- custom directives -->
+    <h1 [csClass]="'text-class'" [dkClass]="'h1'">App is running !!!</h1>
+    <div *csIf="true">
+          This is testing if directive.
+    </div>
+ 
+    <app-ng-style></app-ng-style>
+    <hr>
     <app-ng-class></app-ng-class>
     <app-ng-if></app-ng-if>
     <app-ng-switch></app-ng-switch>
     <app-ng-for></app-ng-for>
-    
+
 </div>
