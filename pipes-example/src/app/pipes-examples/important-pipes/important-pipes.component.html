@@ -1,0 +1,20 @@
+
+<div class="pipe-container">
+    <h2>{{name| uppercase}}</h2>
+    <!-- <h2>{{convertToUpperCase(name)}}</h2> -->
+    <h2>{{name|lowercase}}</h2>
+    <h3>{{name | slice : 0 :7}}</h3>
+    <hr>
+    <p>{{description|uppercase}}</p>
+    <p>{{description|lowercase}}</p>
+    <p>{{description|slice : 0 : 12}}</p>
+    <hr>
+    <h1>Number,Percentage,Currency</h1>
+    <h2>Item Price : {{itemPrice|number:'2.2-4'}}</h2>
+    <h2>Percentage of RAM is : {{ramPercentage|percent:'2.1-2'}}</h2>
+    <h2>Amount : {{amount|currency:'INR':true:'4.2-4'}}</h2>
+
+    <hr>
+    <h1>{{'Durgesh is very good boy'|upper}}</h1>
+    <h1>{{csDate|csDate}}</h1>
+</div>

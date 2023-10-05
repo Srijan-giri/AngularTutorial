@@ -1,10 +1,29 @@
 <div class="container">
+
+    <div>
+        <h2>pipes example</h2>
+        <p style="font-size:30px">{{todayDate | date:'medium'|lowercase}}</p>
+    </div>
+
+
+
     <!-- custom directives -->
     <h1 [csClass]="'text-class'" [dkClass]="'h1'">App is running !!!</h1>
     <div *csIf="true">
-          This is testing if directive.
+        This is testing if directive.
+        <div>
+            <p *dkIf="true">This is dk test directive.</p>
+        </div>
     </div>
- 
+    <h2 appHighlight>This is highlight directive</h2>
+    <div>
+        <button (click)="toogleCondition()">Toggle</button>
+        <!-- <p>{{condition}}</p> -->
+        <p *toogleIf="condition">This is toggle if checking</p>
+    </div>
+
+
+
     <app-ng-style></app-ng-style>
     <hr>
     <app-ng-class></app-ng-class>

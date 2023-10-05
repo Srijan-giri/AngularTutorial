@@ -6,15 +6,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'directive-examples';
-
-  condition:boolean = false;
-
-  toogleCondition(){
-    this.condition=!this.condition;
-  }
-
-
-   // pipes
-    todayDate = new Date();
+  title = 'pipes-example';
+  currentDate = new Date();
 }

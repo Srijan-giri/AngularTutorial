@@ -1,0 +1,7 @@
+// 5 steps ::
+
+1. Create a class that implements PipeTransform Interface
+2. override transform method to define the logic of pipe
+3. @Pipe decorator to provide meta data like name
+4. declare the class in app module
+5. use the pipe with given name

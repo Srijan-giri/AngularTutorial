@@ -1,0 +1,44 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="card mt-2 border-0 shadow">
+                <div class="card-body">
+                    <div class="image-container text-center">
+                        <img src="assets/temp-image.gif" class="image" alt="temp-image">
+                    </div>
+                    <h1 class="mt-2 mb-5 text-center text-uppercase fw-bold">
+                        Temparature Converter
+                    </h1>
+                    <h2 class="text-muted">Fahrenheit to Celcius</h2>
+                    <div class="form-container">
+                        <div class="my-4">
+                            <label for="box1">Enter Temparature in Fahrenheit</label>
+                            <div class="input-group">
+                                <input type="text" id="box1" class="form-control border border-primary"
+                                    placeholder="Enter here" [(ngModel)]="valueInF" />
+                                <!-- <button class="btn btn-outline-primary">Convert</button> -->
+                            </div>
+                            <h2 *ngIf="valueInF > 0" class="text-center text-primary fw-bold my-2">
+                                {{ valueInF | convertTemp : "C" }} C
+                            </h2>
+                        </div>
+                    </div>
+                    <h2 class="text-muted">Celcius to Fahrenheit</h2>
+                    <div class="form-container">
+                        <div class="my-4">
+                            <label for="box1">Enter Temparature in Celcius</label>
+                            <div class="input-group">
+                                <input type="text" id="box1" class="form-control border border-success"
+                                    placeholder="Enter here" [(ngModel)]="valueInC" />
+                                <!-- <button class="btn btn-outline-success">Convert</button> -->
+                            </div>
+                            <h2 *ngIf="valueInC > 0" class="text-center text-success fw-bold my-2">
+                                {{ valueInC | convertTemp : "F" }} F
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

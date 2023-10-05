@@ -12,6 +12,9 @@ import { NgStyleComponent } from './components/ng-style/ng-style.component';
 import { csClassDirective } from './CustomDirectives/cs-class.directive';
 import { dkClassDirective } from './CustomDirectives/dk-class.directive';
 import { csIfDirective } from './CustomDirectives/cs-if.directive';
+import { dkIfDirective } from './CustomDirectives/dk-if.directive';
+import { HighlightDirective } from './CustomDirectives/highlight.directive';
+import { toogleIfDirective } from './CustomDirectives/toggle-if.directive';
 
 
 @NgModule({
@@ -24,7 +27,11 @@ import { csIfDirective } from './CustomDirectives/cs-if.directive';
     NgStyleComponent,
     csClassDirective,
     dkClassDirective,
-    csIfDirective
+    csIfDirective,
+    dkIfDirective,
+    HighlightDirective,
+    toogleIfDirective
+
   ],
   imports: [
     BrowserModule,
