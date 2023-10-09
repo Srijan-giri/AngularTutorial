@@ -1,0 +1,107 @@
+<div class="container">
+  <h2>Template Driven Form</h2>
+  <h2>User Registration Form</h2>
+  <form #userForm="ngForm" (ngSubmit)="formSubmitted(userForm)">
+    <p style="color:red" *ngIf="!userForm.valid">Form is Invalid</p>
+    <p style="color:rgb(28, 233, 42)" *ngIf="userForm.valid">Form is Valid</p>
+    <table>
+      <tr>
+        <td>Name</td>
+        <td>
+          <input
+            required
+            type="text"
+            placeholder="Enter your name"
+            name="name"
+            #nameField="ngModel"
+            ngModel
+            
+          />
+          <!-- [(ngModel)]="user.name" for ngModel-->
+          <!-- 
+            
+            
+            div class="form-detail">
+              <p> {{nameField.value | json}}</p>
+              <p>Valid : {{nameField.valid}}</p>
+              <p>Invalid : {{nameField.invalid}}</p>
+              <p>Touched : {{nameField.touched}}</p>
+              <p>Dirty : {{nameField.dirty}}</p>
+          </div> -->
+        </td>
+      </tr>
+      <tr>
+        <td>Email</td>
+        <td>
+          <input
+          required
+            type="email"
+            placeholder="Enter your email"
+            name="email"
+           ngModel
+          />
+        </td>
+        <!-- [(ngModel)]="user.email" -->
+      </tr>
+      <tr>
+        <td>About</td>
+        <td>
+          <textarea
+            cols="22"
+            rows="6"
+            placeholder="Enter Here"
+            name="about"
+            [(ngModel)]="user.about"
+
+          >
+          </textarea>
+        </td>
+      </tr>
+      <tr>
+        <td>Gender</td>
+        <td>
+          <input 
+          type="radio" 
+          value="male" 
+          name="gender" 
+          [(ngModel)]="user.gender"
+          /> Male
+          <input 
+          type="radio" 
+          value="female" 
+          name="gender" 
+          [(ngModel)]="user.gender"
+          />Female
+        </td>
+      </tr>
+      <tr>
+        <td>Select City</td>
+        <td>
+          <select [(ngModel)]="user.city" name="city">
+            <option value="Lucknow">Lucknow</option>
+            <option value="Delhi">Delhi</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Kanpur">Kanpur</option>
+            <option value="Kolkata">Kolkata</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <button type="submit" >Submit</button>
+          <button type="reset">Clear</button>
+        </td>
+      </tr>
+    </table>
+    <div class="form-detail">
+        <h2>Form Details</h2>
+        <p>Value : {{userForm.value | json}}</p>
+        <p>Valid : {{userForm.valid}}</p>
+        <p>Invalid : {{userForm.invalid}}</p>
+        <p>Touched : {{userForm.touched}}</p>
+        <p>Submitted : {{userForm.submitted}}</p>
+        <p>Dirty : {{userForm.dirty}}</p>
+    </div>
+  </form>
+  <p>{{userForm.valid}}</p>
+</div>

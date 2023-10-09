@@ -1,0 +1,32 @@
+.container{
+    width:80%;
+    margin:auto;
+    /* background-color:aquamarine ; */
+    padding:20px;
+    text-align: center;
+
+}
+
+table{
+    margin:auto;
+}
+
+table tr td{
+    padding:5px;
+    font-size: 25px;
+}
+
+button{
+    margin:2px;
+    font-size: 25px;
+}
+
+table input,textarea,select{
+    font-size: 25px;
+}
+
+.form-detail{
+    border:1px solid red;
+    padding: 10px;
+    background-color: bisque;
+}
